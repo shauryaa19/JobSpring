@@ -9,13 +9,19 @@ const Hero = ({ onSearch }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    onSearch(searchQuery, location);
+    // Only submit if at least one field has content
+    if (searchQuery.trim() || location.trim()) {
+      onSearch(searchQuery, location);
+    }
   };
 
   const handlePopularSearchClick = (term) => {
     setSearchQuery(term);
     onSearch(term, location);
   };
+
+  // Check if submit button should be disabled
+  const isSubmitDisabled = !searchQuery.trim() && !location.trim();
 
   return (
     <section className="hero">
@@ -59,7 +65,11 @@ const Hero = ({ onSearch }) => {
                 />
               </div>
               
-              <button type="submit" className="btn btn-primary search-btn">
+              <button 
+                type="submit" 
+                className="btn btn-primary search-btn"
+                disabled={isSubmitDisabled}
+              >
                 Search Jobs
               </button>
             </div>

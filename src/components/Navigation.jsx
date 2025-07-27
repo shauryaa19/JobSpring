@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { Search, User, Moon, Sun, Briefcase, LogOut, Settings } from 'lucide-react';
+import { User, Moon, Sun, Briefcase, LogOut, Settings } from 'lucide-react';
 import { NAVIGATION_CONSTANTS } from '../data/ui';
 import { useProfile } from '../hooks/useApi';
 import { UserAvatar } from './ui';
@@ -52,10 +52,12 @@ const Navigation = ({ isDark, toggleTheme }) => {
     <nav className="navigation">
       <div className="nav-container">
         <Link to="/" className="nav-brand">
-          {(() => {
-            const IconComponent = iconMap[NAVIGATION_CONSTANTS.brand.icon];
-            return <IconComponent className="brand-icon" />;
-          })()}
+          <img 
+            src="/joblo-ai-logo.png" 
+            alt="Joblo.ai" 
+            className="brand-icon" 
+            style={{ width: '32px', height: '32px' }}
+          />
           <span className="brand-text">{NAVIGATION_CONSTANTS.brand.name}</span>
         </Link>
         
