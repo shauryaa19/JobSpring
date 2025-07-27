@@ -1,0 +1,5 @@
+/* Jobs Components */
+@import './JobCard.css';
+@import './JobList.css';
+@import './FiltersPanel.css';
+@import './Pagination.css'; 

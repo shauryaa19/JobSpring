@@ -1,0 +1,62 @@
+/* ProfileOverview Component Styles */
+
+.content-section {
+  margin-bottom: var(--spacing-8);
+}
+
+.content-section:last-child {
+  margin-bottom: 0;
+}
+
+.content-section h3 {
+  margin-bottom: var(--spacing-4);
+  color: var(--text-primary);
+}
+
+.bio-text {
+  line-height: 1.7;
+  color: var(--gray-600);
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+  color: var(--gray-600);
+}
+
+.contact-item svg {
+  color: var(--gray-400);
+}
+
+.education-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+  color: var(--gray-600);
+}
+
+.education-item svg {
+  color: var(--gray-400);
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-2);
+}
+
+.skill-tag {
+  padding: var(--spacing-2) var(--spacing-4);
+  background: var(--primary-green-light);
+  color: var(--primary-green);
+  border-radius: var(--radius-lg);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+} 

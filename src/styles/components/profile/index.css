@@ -1,0 +1,6 @@
+/* Profile Components */
+@import './Profile.css';
+@import './EditProfileModal.css';
+@import './ProfileStats.css';
+@import './ProfileOverview.css';
+@import './ApplicationsList.css'; 

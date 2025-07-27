@@ -1,0 +1,14 @@
+/* Modal Component Styles */
+
+/* Modal Variants */
+.modal-small {
+  max-width: 400px;
+}
+
+.modal-medium {
+  max-width: 600px;
+}
+
+.modal-large {
+  max-width: 800px;
+} 

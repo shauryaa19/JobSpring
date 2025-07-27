@@ -1,0 +1,18 @@
+/* Global Components */
+@import './Navigation.css';
+@import './Chatbot.css';
+
+/* UI Components */
+@import './ui/index.css';
+
+/* Home Components */
+@import './home/index.css';
+
+/* Jobs Components */
+@import './jobs/index.css';
+
+/* Job Details Components */
+@import './job-details/index.css';
+
+/* Profile Components */
+@import './profile/index.css'; 

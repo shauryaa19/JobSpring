@@ -1,0 +1,71 @@
+/* ApplicationsList Component Styles */
+
+.applications-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+}
+
+.application-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-5);
+  background: var(--background-card);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-color);
+}
+
+.application-position {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-1);
+}
+
+.application-company {
+  color: var(--gray-600);
+  margin-bottom: var(--spacing-1);
+}
+
+.application-date {
+  font-size: var(--font-size-sm);
+  color: var(--gray-500);
+}
+
+.status-badge {
+  padding: var(--spacing-2) var(--spacing-3);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-xs);
+  font-weight: 500;
+}
+
+.status-blue {
+  background: var(--secondary-blue-light);
+  color: var(--secondary-blue);
+}
+
+.status-orange {
+  background: rgba(245, 158, 11, 0.1);
+  color: var(--warning);
+}
+
+.status-green {
+  background: var(--primary-green-light);
+  color: var(--primary-green);
+}
+
+.empty-state {
+  text-align: center;
+  padding: var(--spacing-12) var(--spacing-8);
+  color: var(--gray-500);
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .application-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-3);
+  }
+} 
