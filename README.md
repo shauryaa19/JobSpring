@@ -1,4 +1,4 @@
-# Joblo.ai - Job Board Application
+# JobSpring - Job Board Application
 
 A React-based job board application with mock data, featuring job search, user profiles, and an AI chatbot assistant (Buddy Bot).
 
