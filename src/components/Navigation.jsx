@@ -53,12 +53,12 @@ const Navigation = ({ isDark, toggleTheme }) => {
       <div className="nav-container">
         <Link to="/" className="nav-brand">
           <img 
-            src="/joblo-ai-logo.png" 
+            src="/JobSpring-logo.png" 
             alt="Joblo.ai" 
             className="brand-icon" 
-            style={{ width: '32px', height: '32px' }}
+            style={{ width: '80px', height: '80px' }}
           />
-          <span className="brand-text">{NAVIGATION_CONSTANTS.brand.name}</span>
+          {/* <span className="brand-text">{NAVIGATION_CONSTANTS.brand.name}</span> */}
         </Link>
         
         <div className="nav-menu">

@@ -28,7 +28,7 @@ export const CHATBOT_CONSTANTS = {
 
 export const NAVIGATION_CONSTANTS = {
   brand: {
-    name: 'Joblo.ai',
+    name: 'JobSpring',
     icon: 'Briefcase'
   },
   menuItems: [
